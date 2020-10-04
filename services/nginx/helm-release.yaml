@@ -9,7 +9,7 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: https://kubernetes-charts.storage.googleapis.com/
+      chart: nginx-ingress
       version: 1.41.2
       sourceRef:
         kind: HelmRepository
