@@ -6,11 +6,11 @@ metadata:
   annotations:
     fluxcd.io/automated: "false"
 spec:
-  releaseName: nginx-ingress
+  interval: 5m
   chart:
-    repository: https://kubernetes-charts.storage.googleapis.com/
-    name: nginx-ingress
-    version: 1.41.2
+    spec:
+      chart: https://kubernetes-charts.storage.googleapis.com/
+      version: 1.41.2
   values:
     defaultBackend:
       enabled: false
