@@ -11,6 +11,11 @@ spec:
     spec:
       chart: https://kubernetes-charts.storage.googleapis.com/
       version: 1.41.2
+      sourceRef:
+        kind: HelmRepository
+        name: nginx-ingress
+        namespace: nginx-ingress
+      interval: 5m
   values:
     defaultBackend:
       enabled: false
